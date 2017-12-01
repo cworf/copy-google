@@ -1,0 +1,53 @@
+body {
+    background: #fff;
+    font-family: roboto, sans-serif;
+    color: #757575;
+}
+
+a {
+    color: #3367d6;
+}
+
+a:hover {
+    color: #4285f4;
+}
+
+nav.flex {
+    justify-content: space-between;
+}
+
+header.flex {
+    justify-content: space-between;
+}
+
+section#top {
+    background: #F5F5F5;
+}
+
+section {
+    padding: 50px 0;
+}
+
+header {
+    padding: 30px;
+}
+
+section#main {
+    background: #FAFAFA;
+}
+
+footer {
+    background: #3367D6;
+    color: #fff;
+    padding: 50px 0 30px;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
