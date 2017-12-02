@@ -430,3 +430,43 @@ button.btn.white-btn {
 .right {
     margin-left: auto;
 }
+
+.sticky-bottom {
+    position: sticky;
+    bottom: 0;
+    background: #fff;
+    font-size: .8em;
+    padding-left: 25px;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+button.btn.thin-btn {
+    padding: 4px 15px;
+    margin: 10px 28px;
+}
+
+.sticky-bottom i {
+    margin-right: 8px;
+}
+
+span.case:before {
+    content: "\f0b1";
+    font-family: fontawesome;
+    margin-right: 10px;
+}
+
+a.open-lnk:after {
+    font-family: fontawesome;
+    content: "\f18e";
+    margin-left: 7px;
+    font-size: 1.3em;
+    display: inline-block;
+    transition:transform .2s ease
+}
+
+a.open-lnk:hover:after {
+    transform: rotatez(-45deg);
+}
