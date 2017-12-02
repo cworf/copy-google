@@ -1,5 +1,6 @@
-/*@media only screen and (max-width:1179px){
+@media only screen and (max-width:1179px){
     ul.nav-links {
+        display: none;
         position: fixed;
         left: 0;
         background: #fff;
@@ -28,7 +29,7 @@
     .nav-links a {
         padding: 15px 0;
     }
-}*/
+}
 
 @media only screen and (max-width:1000px){
     .grid {
@@ -73,6 +74,22 @@
 }
 
 @media only screen and (max-width:600px){
+    body {
+        font-size: .95em;
+    }
+
+    h3#ad-title {
+        margin-top: 30px;
+    }
+
+    #main .grid-item {
+        height: auto;
+    }
+
+    .foot-main.flex {
+        padding: 0;
+    }
+
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 10px;
@@ -107,129 +124,11 @@
         flex-basis: 60%;
     }
 
-    /*@media only screen and (max-width:1179px){
-        ul.nav-links {
-            position: fixed;
-            left: 0;
-            background: #fff;
-            top: 0;
-            bottom: 0;
-            width: 309px;
-            z-index: 99;
-            padding: 20px;
-        }
-
-        ul.nav-links li {
-            display: block;
-            background: #fff;
-            border-bottom: 1px solid #00000029;
-        }
-
-        ul.nav-links:before {
-            position:;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: #000000a3;
-            z-index: -5;
-        }
-
-        .nav-links a {
-            padding: 15px 0;
-        }
-    }*/
-
-    @media only screen and (max-width:1000px){
-        .grid {
-            grid-template-columns: 1fr 1fr;
-        }
-        select.lang, header.container > img, .sub-link, .sub-title, .title-container .btn, .section-head {
-            display: none;
-        }
-
-        .over-content.flex {
-            position: relative;
-            padding: 40px 0 0;
-        }
-
-        header.container {
-            margin-top: 0!important;
-        }
-
-        h1.title {
-            font-size: 2em;
-            margin: 0;
-        }
-
-        body {
-            background: whitesmoke;
-        }
-
-        .menu-box {
-        }
-
-        h3#consumer-title {
-            margin-top: 26px;
-        }
-
-        .foot-main.flex {
-            flex-direction: column;
-        }
-
-        h2.foot-title {
-            padding: 0;
-        }
+    #top .span-2 .item-content {
+        padding: 20px;
     }
 
-    @media only screen and (max-width:600px){
-        body {
-            font-size: .95em;
-        }
-
-        h3#ad-title {
-            margin-top: 30px;
-        }
-
-        #main .grid-item {
-            height: auto;
-        }
-
-        .foot-main.flex {
-            padding: 0;
-        }
-                
-        .grid {
-            grid-template-columns: 1fr;
-            grid-gap: 10px;
-        }
-
-        .grid-item.span-2 {
-            grid-column: 1;
-            height: 307px;
-        }
-
-        .grid-item {
-            height: auto;
-        }
-
-        .grid-item:not(.span-2) {
-            text-align: left;
-            flex-direction: row;
-            padding: 10px;
-        }
-
-        .grid-item:not(.span-2) .box-head {
-            width: 33.3333%;
-            height: 100%!important;
-            align-self: baseline;
-            display: block;
-            position: relative;
-            max-width: 130px;
-        }
-
-        .item-content {
-            padding: 0 0 0 10px;
-            flex-basis: 60%;
-        }
-    }
+    #top .span-2 .item-content h3 {
+        margin-bottom: 15px;
+    }    
 }
