@@ -1,14 +1,14 @@
 @media only screen and (max-width:1179px){
-    ul.nav-links {
-        display: none;
+    .navbar {
         position: fixed;
-        left: 0;
+        left: -309px;
         background: #fff;
         top: 0;
         bottom: 0;
         width: 309px;
         z-index: 99;
         padding: 20px;
+        transition: all .5s ease;
     }
 
     ul.nav-links li {
@@ -28,6 +28,43 @@
 
     .nav-links a {
         padding: 15px 0;
+    }
+    .mobile-only {
+        display: initial;
+    }
+
+    nav.flex.container {
+        justify-content: flex-start;
+    }
+
+    nav button {
+        background: transparent;
+        border: none;
+        font-size: 1.5em;
+        position: relative;
+        top: -6px;
+        color: #767676;
+    }
+
+    a.main-logo {
+        display: inline-flex;
+    }
+
+    .mobile-overlay {
+        position: fixed;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        background: transparent;
+        transition: all .5s ease;
+    }
+
+    .nav-expand {
+        display: inline-block;
+        top: 0px;
+        left: -11px;
     }
 }
 
@@ -130,5 +167,5 @@
 
     #top .span-2 .item-content h3 {
         margin-bottom: 15px;
-    }    
+    }
 }

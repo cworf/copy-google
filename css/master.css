@@ -44,7 +44,7 @@ nav.flex {
     justify-content: space-between;
     padding: 10px 0 0;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
     position: relative;
 }
 
@@ -110,11 +110,12 @@ ul.nav-links li {
     display: inline-block;
 }
 
-.search a {
+a.search {
     padding: 0;
     width: 23px;
     position: relative;
     margin-left: 15px;
+    display: inline-block;
 }
 
 .nav-links a:hover {
@@ -137,8 +138,9 @@ select.lang {
     font-size: 14px;
 }
 
-.search a:hover {
+a.search:hover {
     background: transparent;
+    box-shadow: none;
 }
 
 
@@ -406,4 +408,25 @@ form#subscribe-form a {
 button.btn.white-btn {
     background: #fff;
     color: #4285F4;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.nav-expand:focus ~ .right .navbar {
+    left: 0;
+}
+
+.nav-expand:focus ~ .right .mobile-overlay {
+    background: #0000006e;
+    pointer-events: auto;
+}
+
+.right {
+    margin-left: auto;
 }
