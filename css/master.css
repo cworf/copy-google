@@ -325,6 +325,26 @@ a.box-head {
     height: 100%;
 }
 
+.excerpt {
+    font-size: .85em;
+    color: #757575;
+}
+
+.buttons a {
+    color: #757575;
+    font-size: .85em;
+    font-weight: bold;
+}
+
+a.open-lnk {
+    color: #3367d6;
+    margin-right: 20px;
+}
+
+#main .grid-item {
+    height: 400px;
+}
+
 /*---------------------------------- footer ------------------------------*/
 
 h2.foot-title {
