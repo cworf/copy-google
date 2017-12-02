@@ -13,6 +13,7 @@ button.btn {
     font-family: roboto;
     color: #fff;
     font-weight: bold;
+    cursor: pointer;
 }
 
 h2 {
@@ -324,43 +325,61 @@ a.box-head {
     height: 100%;
 }
 
-@media only screen and (max-width:1000px){
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+/*---------------------------------- footer ------------------------------*/
+
+h2.foot-title {
+    font-size: 2.5em;
+    padding: 0 34% 0 0;
+    line-height: 1.2;
+    color: #fff;
 }
 
-@media only screen and (max-width:600px){
-    .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
+.foot-main.flex {
+    border-bottom: 1px solid #ffffff4f;
+    padding: 20px 100px 50px;
+}
 
-    .grid-item.span-2 {
-        grid-column: 1;
-        height: 307px;
-    }
+input[type="text"] {
+    display: block;
+    margin-bottom: 35px;
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-color: #ffffff82;
+    width: 100%;
+    color: #fff;
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
 
-    .grid-item {
-        height: auto;
-    }
+input[type="text"]::placeholder {
+    color: #fff;
+}
 
-    .grid-item.center {
-        text-align: left;
-        flex-direction: row;
-        padding: 10px;
-    }
+form#subscribe-form p {
+    font-size: 0.9em;
+    margin-bottom: 50px;
+}
 
-    .grid-item.center .box-head {
-        flex-basis: 33.3333%;
-        height: 100%!important;
-        align-self: baseline;
-        display: block;
-        position: relative;
-        max-width: 130px;
-    }
+form#subscribe-form a {
+    text-decoration: underline;
+    color: #fff;
+}
 
-    a.item-content {
-        padding: 0 0 0 10px;
-    }
+.foot-links a {
+    color: #fff;
+    font-size: .9em;
+}
+
+.foot-links {
+    margin-top: 25px;
+}
+
+.foot-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+button.btn.white-btn {
+    background: #fff;
+    color: #4285F4;
 }

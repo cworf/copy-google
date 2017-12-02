@@ -1,0 +1,41 @@
+
+@media only screen and (max-width:1000px){
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .grid-item.span-2 {
+        grid-column: 1;
+        height: 307px;
+    }
+
+    .grid-item {
+        height: auto;
+    }
+
+    .grid-item.center {
+        text-align: left;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .grid-item.center .box-head {
+        flex-basis: 33.3333%;
+        height: 100%!important;
+        align-self: baseline;
+        display: block;
+        position: relative;
+        max-width: 130px;
+    }
+
+    a.item-content {
+        padding: 0 0 0 10px;
+    }
+}
